@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # vi:syntax=sh
+
+git submodule update --recursive --remote
+
 exists () {
   type "$1" >/dev/null 2>/dev/null
 }
