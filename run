@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# vi:syntax=sh
+
+cd "$1"
+npm start
+cd ..
