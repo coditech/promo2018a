@@ -6,7 +6,13 @@
 	url = https://github.com/mitza24/final-project
 [submodule "bayan_mawed"]
 	path = bayan_mawed
-	url = https://github.com/BayanMawed/Moral-Stories
+	url = https://github.com/BayanMawed/Moral_Children_Stories
 [submodule "ahmad_khoja"]
 	path = ahmad_khoja
 	url = https://github.com/ahmadkhoja/advnaced-final-chat
+[submodule "amr_gharz"]
+	path = amr_gharz
+	url = https://github.com/amrgharz/react-final-project.git
+[submodule "jad_azar"]
+	path = jad_azar
+	url = https://github.com/jadcoding/project
