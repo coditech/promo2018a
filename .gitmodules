@@ -1,0 +1,12 @@
+[submodule "anthony_nakhle"]
+	path = anthony_nakhle
+	url = https://github.com/anthonynakhlee/AnthonyNakhleFinalProject
+[submodule "mitza_haddad"]
+	path = mitza_haddad
+	url = https://github.com/mitza24/final-project
+[submodule "bayan_mawed"]
+	path = bayan_mawed
+	url = https://github.com/BayanMawed/Moral-Stories
+[submodule "ahmad_khoja"]
+	path = ahmad_khoja
+	url = https://github.com/ahmadkhoja/advnaced-final-chat

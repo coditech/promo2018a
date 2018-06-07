@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# vi:syntax=sh
+exists () {
+  type "$1" >/dev/null 2>/dev/null
+}
+
+dieIfNotExists () {
+    if $(exists "$1"); then
+        echo "$1 exists"
+    else
+        echo "$1 does not exist"
+        exit 1
+    fi;
+}
+
+echo "----------------"
+echo ""
+echo "checking that all requirements are available"
+
+dieIfNotExists node
+dieIfNotExists npm
+dieIfNotExists yarn
+
+echo "requirements passed"
+echo ""
+echo "----------------"
+echo ""
+
+for D in *; do
+    if [ -d "${D}" ]; then
+        echo ""
+        echo "----------------"
+        echo ""
+        echo "${D} -- installing dependencies"
+        cd "$D" && npm install
+        echo "${D} -- dependencies installed"
+        echo ""
+        cd ..
+    fi
+done
+
+echo "everything installed"
