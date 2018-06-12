@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # vi:syntax=sh
 
+echo "updating all git submodules"
+
 git submodule update --recursive --remote
 
 exists () {
@@ -22,7 +24,7 @@ echo "checking that all requirements are available"
 
 dieIfNotExists node
 dieIfNotExists npm
-dieIfNotExists yarn
+dieIfNotExists meteor
 
 echo "requirements passed"
 echo ""

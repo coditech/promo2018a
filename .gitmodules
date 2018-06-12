@@ -19,3 +19,21 @@
 [submodule "bayan_mawed"]
 	path = bayan_mawed
 	url = https://github.com/BayanMawed/Moral_Children_Stories.git
+[submodule "ali_osseily"]
+	path = ali_osseily
+	url = https://github.com/Aliosseily/final-project
+[submodule "saleh_saadi"]
+	path = saleh_saadi
+	url = https://github.com/saadi91/final-project
+[submodule "anas_jamous"]
+	path = anas_jamous
+	url = https://github.com/AnasJamous/final-meet-up-project
+[submodule "souad_ali"]
+	path = souad_ali
+	url = https://github.com/SouadAli10/Final_Project
+[submodule "hampig_mazakian"]
+	path = hampig_mazakian
+	url = https://github.com/hm521/Nadros-final-project
+[submodule "fadi_moubassaleh"]
+	path = fadi_moubassaleh
+	url = https://github.com/fadimoubassaleh/ScoreXfinalProject

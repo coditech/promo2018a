@@ -4,10 +4,10 @@ Websites and final projects created by Codi 2018
 
 ## INSTALL
 
-run the local included `install` file:
+run the local included `install` script:
 
 ```
-$./install
+$ ./install
 ```
 
 This will:
@@ -16,17 +16,23 @@ This will:
 - enter each directory
 - run `npm install` in each directory
 
-
 ## Run
 
-use the included `run` file:
+use the included `start` script:
 
 ```sh
-$./run <NAME>
+$ npm run <NAME>
 ```
 
-Where `<NAME>` is the name of a student project (directory), e.g, `./run amr_gharz`
+Where `<NAME>` is the name of a student project (directory), e.g, `npm run amr_gharz`
 
+or
+
+```sh
+$ npm start
+```
+
+to run all projects
 
 ## LICENSE
 

@@ -1,0 +1,36 @@
+{
+  "name": "promo2018",
+  "version": "1.0.0",
+  "description": "Students projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ahmad_khoja": "cd ahmad_khoja && npm start",
+    "ali_osseily": "cd ali_osseily && npm start",
+    "amr_gharz": "cd amr_gharz && npm start",
+    "anas_jamous": "cd anas_jamous && npm start",
+    "anthony_nakhle": "cd anthony_nakhle && npm start",
+    "bayan_mawed": "cd bayan_mawed && npm start",
+    "fadi_moubassaleh": "cd fadi_moubassaleh && npm start",
+    "hampig_mazakian": "cd hampig_mazakian && npm start",
+    "jad_azar": "cd jad_azar && npm start",
+    "mitza_haddad": "cd mitza_haddad && npm start",
+    "nagham_ramadan": "cd nagham_ramadan && npm start",
+    "saleh_saadi": "cd saleh_saadi && npm start",
+    "souad_ali": "cd souad_ali && npm start",
+    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run install anthony_nakhle\" \"npm run bayan_mawed\" \"npm run fadi_moubassaleh\" \"npm run install hampig_mazakian\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coditech/promo2018a.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coditech/promo2018a/issues"
+  },
+  "homepage": "https://github.com/coditech/promo2018a#readme",
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
