@@ -19,9 +19,6 @@
 [submodule "bayan_mawed"]
 	path = bayan_mawed
 	url = https://github.com/BayanMawed/Moral_Children_Stories.git
-[submodule "ali_osseily"]
-	path = ali_osseily
-	url = https://github.com/Aliosseily/final-project
 [submodule "saleh_saadi"]
 	path = saleh_saadi
 	url = https://github.com/saadi91/final-project
