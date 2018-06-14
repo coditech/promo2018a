@@ -32,16 +32,19 @@ echo "----------------"
 echo ""
 
 for D in *; do
-    if [ -d "${D}" ]; then
-        echo ""
-        echo "----------------"
-        echo ""
-        echo "${D} -- installing dependencies"
-        cd "$D" && npm install
-        echo "${D} -- dependencies installed"
-        echo ""
-        cd ..
+  if [ -d "${D}" ]; then
+    if [ "$D" = "node_modules" ]; then
+    else
+      echo ""
+      echo "----------------"
+      echo ""
+      echo "${D} -- installing dependencies"
+      cd "$D" && npm install
+      echo "${D} -- dependencies installed"
+      echo ""
+      cd ..
     fi
+  fi
 done
 
 echo "everything installed"
