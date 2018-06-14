@@ -18,7 +18,7 @@
     "nagham_ramadan": "cd nagham_ramadan && npm start",
     "saleh_saadi": "cd saleh_saadi && npm start",
     "souad_ali": "cd souad_ali && npm start",
-    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run install anthony_nakhle\" \"npm run bayan_mawed\" \"npm run fadi_moubassaleh\" \"npm run install hampig_mazakian\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\""
+    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run anthony_nakhle\" \"npm run bayan_mawed\" \"npm run fadi_moubassaleh\" \"npm run hampig_mazakian\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\""
   },
   "repository": {
     "type": "git",
