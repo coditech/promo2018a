@@ -1,15 +1,20 @@
 const fs = require('fs')
-const join = require('path').join
+const requirements = require('./package.json').requirements
+const { join, delimiter } = require('path')
 
 const root = __dirname
 
 const isDir = (path) => {
-    let isIt = false
     try{
-        isIt = fs.statSync(path).isDirectory()
+        return fs.statSync(path).isDirectory()
     }catch(e){}
-    return isIt
 }
+
+const isFile = (path) =>{
+    try{
+        return fs.statSync(path).isFile()
+    }catch(e){}
+} 
 
 const dirs = fs.readdirSync('./')
     .filter(isDir)
@@ -24,3 +29,34 @@ const dirs = fs.readdirSync('./')
         const obj = { front, path, dir, front, back, url }
         return obj
     })
+
+const getPaths = (bin) => {
+    var envPath = (process.env.PATH || '');
+    var envExt = (process.env.PATHEXT || '');
+    return envPath.replace(/["]+/g, '').split(delimiter).map(function (chunk) {
+        return envExt.split(delimiter).map(function (ext) {
+            return join(chunk, bin + ext);
+        });
+    }).reduce(function (a, b) {
+        return a.concat(b);
+    });
+}
+
+const exists = (bin) => getPaths(bin).some(isFile)
+
+const checkIfExists = (bin) => {
+    if(exists(bin)){
+        console.log(`"${bin}" -- available`)
+        return true
+    }else{
+        console.log(`"${bin}" -- ERR: not found`)
+        return false
+    }
+}
+
+if(requirements.filter(checkIfExists).length !== requirements.length){
+    console.log('not all requirements found -- exiting')
+    process.exit(1)
+}else{
+    console.log('all requirements available')
+}

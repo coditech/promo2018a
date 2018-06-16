@@ -24,7 +24,15 @@ This will:
 
 ## RUN
 
-use the included `start` script:
+Check all the required dependencies are available
+
+```sh
+$ npm run requirements
+```
+
+Install whatever is missing, then
+
+Use the included `start` script:
 
 ```sh
 $ npm run <NAME>
@@ -56,7 +64,6 @@ Install a specific project
 ```sh
 $ npm run install:<NAME>
 ```
-
 
 Build all projects
 ```sh
