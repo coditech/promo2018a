@@ -1,5 +1,6 @@
 const fs = require('fs')
 const requirements = require('./package.json').requirements
+const isWin = process.platform === "win32"
 const { join, delimiter } = require('path')
 
 const root = __dirname
@@ -54,7 +55,12 @@ const checkIfExists = (bin) => {
     }
 }
 
-if(requirements.filter(checkIfExists).length !== requirements.length){
+const reqs = requirements.map(req=>{
+    const [linux,win] = req.split("|")
+    if(isWin){ return win}else{return linux}
+})
+
+if(reqs.filter(checkIfExists).length !== requirements.length){
     console.log('not all requirements found -- exiting')
     process.exit(1)
 }else{

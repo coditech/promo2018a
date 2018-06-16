@@ -37,3 +37,6 @@
 [submodule "bayan_mawed"]
 	path = bayan_mawed
 	url = https://github.com/BayanMawed/Moral_Children_Stories.git
+[submodule "ibrahim_jakmour"]
+	path = ibrahim_jakmour
+	url = https://github.com/IbrahimJakmour/Devotech.git

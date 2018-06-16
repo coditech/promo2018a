@@ -29,6 +29,8 @@
     "hampig_mazakian": "cd hampig_mazakian && concurrently --kill-others -n hampig:client \"http-server -p 4000 ./build\"",
     "install:hampig_mazakian": "cd hampig_mazakian && npm install",
     "build:hampig_mazakian": "cd hampig_mazakian && npm run build",
+    "ibrahim_jakmour": "cd ibrahim_jakmour && concurrently --kill-others -n ibrahim:server \"npm start\"",
+    "install:ibrahim_jakmour": "cd ibrahim_jakmour && npm install",
     "jad_azar": "cd jad_azar && concurrently --kill-others -n jad:razzle \"cross-env PORT=4010 NODE_ENV=production node ./build/server.js\"",
     "install:jad_azar": "cd jad_azar && npm install",
     "build:jad_azar": "cd jad_azar && npm run build",
@@ -45,13 +47,13 @@
     "install:souad_ali": "cd souad_ali && npm install",
     "build:souad_ali": "cd souad_ali && npm run build",
     "git:init": "git submodule update --init --recursive",
-    "install:all": "npm run install:ahmad_khoja && npm run install:ali_osseily && npm run install:amr_gharz && npm run install:anas_jamous && npm run install:anthony_nakhle && npm run install:bayan_mawed && npm run install:fadi_moubassaleh && npm run install:hampig_mazakian && npm run install:jad_azar && npm run install:mitza_haddad && npm run install:nagham_ramadan && npm run install:saleh_saadi && npm run install:souad_ali",
+    "install:all": "npm run install:ahmad_khoja && npm run install:ali_osseily && npm run install:amr_gharz && npm run install:anas_jamous && npm run install:anthony_nakhle && npm run install:bayan_mawed && npm run install:fadi_moubassaleh && npm run install:hampig_mazakian && npm run install:ibrahim_jakmour && npm run install:jad_azar && npm run install:mitza_haddad && npm run install:nagham_ramadan && npm run install:saleh_saadi && npm run install:souad_ali",
     "build:all": "npm run build:ahmad_khoja && npm run build:ali_osseily && npm run build:amr_gharz && npm run build:anas_jamous && npm run build:anthony_nakhle && npm run build:bayan_mawed && npm run build:fadi_moubassaleh && npm run build:hampig_mazakian && npm run build:jad_azar && npm run build:mitza_haddad && npm run build:nagham_ramadan && npm run build:saleh_saadi && npm run build:souad_ali",
     "git:update": "git submodule update --recursive --remote && npm run install:all",
     "requirements":"node ./index.js",
     "postinstall": "npm run install:all",
-    "sstart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run anthony_nakhle\" \"npm run bayan_mawed\" \"npm run fadi_moubassaleh\" \"npm run hampig_mazakian\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\"",
-    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,hampig,jad,mitza,nagham,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run anthony_nakhle\" \"npm run bayan_mawed\" \"npm run hampig_mazakian\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run souad_ali\""
+    "sstart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run anthony_nakhle\" \"npm run bayan_mawed\" \"npm run fadi_moubassaleh\" \"npm run hampig_mazakian\" \"npm run ibrahim_jakmour\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\"",
+    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,hampig,ibrahim,jad,mitza,nagham,saleh,souad \"npm run ahmad_khoja\" \"npm run ali_osseily\" \"npm run amr_gharz\" \"npm run anas_jamous\" \"npm run anthony_nakhle\" \"npm run bayan_mawed\" \"npm run hampig_mazakian\" \"npm run ibrahim_jakmour\" \"npm run jad_azar\" \"npm run nagham_ramadan\" \"npm run saleh_saadi\" \"npm run souad_ali\""
   },
   "repository": {
     "type": "git",
@@ -64,7 +66,7 @@
   },
   "homepage": "https://github.com/coditech/promo2018a#readme",
   "requirements": [
-    "node","npm","meteor","mongod"
+    "node|node","npm|npm","meteor|meteor","mongod|C:\\Program Files\\MongoDB\\Server\\3.6\\bin\\mongod"
   ],
   "dependencies": {
     "concurrently": "^3.5.1",
