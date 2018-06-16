@@ -6,6 +6,7 @@
 
 # production
 /build
+/fadi_moubassaleh_build
 
 # misc
 .DS_Store

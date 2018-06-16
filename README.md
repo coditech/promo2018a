@@ -26,6 +26,8 @@ This will:
 - enter each directory
 - run `npm install` in each directory
 
+*note*: on Windows 10, you need to install a specific Meteor version. Use `meteor update --release 1.6.1.2-rc.0`. You will also likely need `node-gyp`, which you can setup in one command from an admin shell `npm install --global --production windows-build-tools`
+
 ## RUN
 
 Check all the required dependencies are available
