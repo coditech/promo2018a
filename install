@@ -3,6 +3,7 @@
 
 echo "updating all git submodules"
 
+# git submodule update --init --recursive
 git submodule update --recursive --remote
 
 exists () {
