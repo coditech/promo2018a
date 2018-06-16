@@ -4,7 +4,7 @@ Websites and final projects created by Codi 2018
 
 ### Additional websites not listed in this repo:
 
-- [Codi Talents](//coditalent.tk)
+- [Codi Talents](http://coditalent.tk)
 
 ## INSTALL
 
