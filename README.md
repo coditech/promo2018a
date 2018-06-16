@@ -38,6 +38,12 @@ $ npm run requirements
 
 Install whatever is missing, then
 
+Build the projects:
+
+```sh
+$ npm run build:all
+```
+
 Use the included `start` script:
 
 ```sh
@@ -69,11 +75,6 @@ $ npm run git:update
 Install a specific project
 ```sh
 $ npm run install:<NAME>
-```
-
-Build all projects
-```sh
-$ npm run build:all
 ```
 
 Build a specific project
