@@ -43,3 +43,6 @@
 [submodule "paul_kananjian"]
 	path = paul_kananjian
 	url = https://github.com/PaulKananjian/punchtech.git
+[submodule "minila"]
+	path = minila
+	url = https://github.com/Aliosseily/minila.git
