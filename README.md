@@ -10,6 +10,7 @@ Websites and final projects created by Codi 2018
 - [Razor](http://172.104.155.254:3000)
 - [Minila]()
 - [Mini Studio](mini-studio.ml)
+- [Presentations](https://drive.google.com/open?id=1K1tbTSiueeEBkKZTj0aJ5-nECkgiIY05)
 
 *Personal Projects*
 
