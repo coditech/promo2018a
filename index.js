@@ -30,7 +30,7 @@ const page = `<html><title>Codi2018</title><body><ul>`+fs.readFileSync('./PORTS.
 	.filter(Boolean)
 	.map(l=>l.split(':'))
 	.map(([student,port])=>[student,isNumber(port) ? `//localhost:${port}` : port ])
-	.map(([student,url])=>`<li><a href="${url}">${student}</a></li>`)
+	.map(([student,url])=>`<li><a href="${url}">${student} - ${url}</a></li>`)
 	.join('')+`</ul></body></html>`
 	
 	
