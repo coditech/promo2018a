@@ -17,6 +17,23 @@ const isFile = (path) =>{
     }catch(e){}
 } 
 
+const isNumber = (n) => !isNaN(parseFloat(n)) && isFinite(n)
+
+const page = `<html><title>Codi2018</title><body><ul>`+fs.readFileSync('./PORTS.md','utf8')
+	.replace(/(\n|\r)+/g,'\n')
+	.replace(/^#.*?\n/g,'')
+	.replace(/- /g,'')
+	.replace(/ to .*?\n/g,'\n')
+	.replace(/\n+/,'\n')
+	.replace(/: /g,':')
+	.split('\n')
+	.filter(Boolean)
+	.map(l=>l.split(':'))
+	.map(([student,port])=>[student,isNumber(port) ? `//localhost:${port}` : port ])
+	.map(([student,url])=>`<li><a href="${url}">${student}</a></li>`)
+	.join('')+`</ul></body></html>`
+	
+	
 const dirs = fs.readdirSync('./')
     .filter(isDir)
     .filter(dir=>dir!=='node_modules' && dir[0]!== '.')
@@ -27,6 +44,7 @@ const dirs = fs.readdirSync('./')
         const front = isDir(frontPath) ? frontPath : path
         const back = isDir(backPath) ? backPath : false
         const url = `/`+dir
+		
         const obj = { front, path, dir, front, back, url }
         return obj
     })
@@ -66,3 +84,5 @@ if(reqs.filter(checkIfExists).length !== requirements.length){
 }else{
     console.log('all requirements available')
 }
+
+require('http').createServer((req,res)=>res.end(page)).listen(3000,()=>{`server running`})

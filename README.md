@@ -44,7 +44,7 @@ This will:
 - enter each directory
 - run `pnpm install` in each directory
 
-*note*: on Windows 10, you need to install a specific Meteor version. Use `meteor update --release 1.6.1.2-rc.0`. You will also likely need `node-gyp`, which you can setup in one command from an admin shell `npm install --global --production windows-build-tools`
+*note*: on Windows 10, you need to install a specific Meteor version. Use `meteor update --release 1.6.1.2-rc.0`. You will also need `node-gyp`, which you can setup in one command from an admin shell `npm install --global --production windows-build-tools`. IT *seems* that to do that, you need to turn off Windows Defender.
 
 ## RUN
 

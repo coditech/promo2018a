@@ -54,7 +54,7 @@
     "git:update": "git submodule update --recursive --remote && pnpm run install:all",
     "requirements": "node ./index.js",
     "postinstall": "pnpm run install:all",
-    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
+    "start": "concurrently --kill-others -n main,ahmad,ali,amr,anas,anthony,bayan,hampig,jad,mitza,nagham,paul,saleh,souad \"pnpm run requirements\" \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" 	\"pnpm run hampig_mazakian\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
     "ttart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham.paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
     "ftart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,hampig,ibrahim,jad,mitza,nagham,paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\""
   },
@@ -71,8 +71,7 @@
   "requirements": [
     "node|node",
     "pnpm|pnpm",
-    "meteor|meteor",
-    "mongod|C:\\Program Files\\MongoDB\\Server\\3.6\\bin\\mongod"
+    "meteor|meteor"
   ],
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.51",
