@@ -31,7 +31,7 @@
     "install:hampig_mazakian": "cd hampig_mazakian && yarn install",
     "build:hampig_mazakian": "cd hampig_mazakian && yarn run build",
     "ibrahim_jakmour": "cd ibrahim_jakmour && concurrently --kill-others -n ibrahim:server \"yarn start\"",
-    "install:ibrahim_jakmour": "cd ibrahim_jakmour && yarn install",
+    "install:ibrahim_jakmour": "cd ibrahim_jakmour && yarn install && cd form && yarn install && cd ../chat && yarn install && cd ../client && yarn install",
     "jad_azar": "cd jad_azar && concurrently --kill-others -n jad:razzle \"cross-env PORT=4010 NODE_ENV=production node ./build/server.js\"",
     "install:jad_azar": "cd jad_azar && yarn install",
     "build:jad_azar": "cd jad_azar && cross-env PORT=4010 yarn run build",
