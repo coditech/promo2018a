@@ -8,23 +8,32 @@ Websites and final projects created by Codi 2018
 
 ## INSTALL
 
-run the local included `install` script:
+Due to the large repeated amount of modules, [pnpm](https://pnpm.js.org) is used in lieu of npm. Install it first
 
 ```sh
-$ npm git:init
+$ npm install --global pnpm
 ```
 
 then
 
+Pull each git submodule
 ```sh
-$ npm install
+$ pnpm git:init
 ```
+
+
+run the local included `install` script:
+
+```sh
+$ pnpm install
+```
+
 
 This will:
 
 - download every project from git
 - enter each directory
-- run `npm install` in each directory
+- run `pnpm install` in each directory
 
 *note*: on Windows 10, you need to install a specific Meteor version. Use `meteor update --release 1.6.1.2-rc.0`. You will also likely need `node-gyp`, which you can setup in one command from an admin shell `npm install --global --production windows-build-tools`
 
@@ -33,7 +42,7 @@ This will:
 Check all the required dependencies are available
 
 ```sh
-$ npm run requirements
+$ pnpm run requirements
 ```
 
 Install whatever is missing, then
@@ -41,13 +50,13 @@ Install whatever is missing, then
 Build the projects:
 
 ```sh
-$ npm run build:all
+$ pnpm run build:all
 ```
 
 Use the included `start` script:
 
 ```sh
-$ npm run <NAME>
+$ pnpm run <NAME>
 ```
 
 Where `<NAME>` is the name of a student project (directory), e.g, `npm run amr_gharz`
@@ -55,31 +64,31 @@ Where `<NAME>` is the name of a student project (directory), e.g, `npm run amr_g
 or
 
 ```sh
-$ npm start
+$ pnpm start
 ```
 
 to run all projects
 
 ## OTHER USEFUL SCRIPTS
 
-run `npm install` in each subdirectory
+run `pnpm install` in each subdirectory
 ```sh
-$ npm install 
+$ pnpm install 
 ```
 
 Update each submodule to its latest version
 ```sh
-$ npm run git:update
+$ pnpm run git:update
 ```
 
 Install a specific project
 ```sh
-$ npm run install:<NAME>
+$ pnpm run install:<NAME>
 ```
 
 Build a specific project
 ```sh
-$ npm run build:<NAME>
+$ pnpm run build:<NAME>
 ```
 
 ## LICENSE
