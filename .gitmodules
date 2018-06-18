@@ -46,3 +46,6 @@
 [submodule "minila"]
 	path = minila
 	url = https://github.com/Aliosseily/minila.git
+[submodule "terez_kazanjian"]
+	path = terez_kazanjian
+	url = https://github.com/terezkazanjian/Heyo
