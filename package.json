@@ -41,6 +41,7 @@
     "nagham_ramadan": "cd nagham_ramadan && concurrently --kill-others -n nagham:client,nagham:server \"http-server -p 4030 ./front/build\" \"cd ./back && node server.js\"",
     "install:nagham_ramadan": "cd nagham_ramadan && cd front && pnpm install && cd ../back && pnpm install",
     "build:nagham_ramadan": "cd nagham_ramadan/front && pnpm run build",
+    "paul_kananjian": "cd paul_kananjian && concurrently --kill-others -n paul:client \"http-server -p 4040 .\"",
     "saleh_saadi": "cd saleh_saadi && concurrently --kill-others -n saleh:client,saleh:server \"http-server -p 4050 ./front/build\" \"cd ./back && node server.js\"",
     "install:saleh_saadi": "cd saleh_saadi && cd front && pnpm install && cd ../back  && pnpm install",
     "build:saleh_saadi": "cd saleh_saadi/front && pnpm run build",
@@ -53,9 +54,9 @@
     "git:update": "git submodule update --recursive --remote && pnpm run install:all",
     "requirements": "node ./index.js",
     "postinstall": "pnpm run install:all",
-    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
-    "ttart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
-    "ftart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,hampig,ibrahim,jad,mitza,nagham,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\""
+    "start": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,jad,mitza,nagham,paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
+    "ttart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham.paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run fadi_moubassaleh\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\"",
+    "ftart": "concurrently --kill-others -n ahmad,ali,amr,anas,anthony,bayan,hampig,ibrahim,jad,mitza,nagham,paul,saleh,souad \"pnpm run ahmad_khoja\" \"pnpm run ali_osseily\" \"pnpm run amr_gharz\" \"pnpm run anas_jamous\" \"pnpm run anthony_nakhle\" \"pnpm run bayan_mawed\" \"pnpm run hampig_mazakian\" \"pnpm run ibrahim_jakmour\" \"pnpm run jad_azar\" \"pnpm run nagham_ramadan\" \"pnpm run paul_kananjian\" \"pnpm run saleh_saadi\" \"pnpm run souad_ali\""
   },
   "repository": {
     "type": "git",
@@ -74,6 +75,7 @@
     "mongod|C:\\Program Files\\MongoDB\\Server\\3.6\\bin\\mongod"
   ],
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.51",
     "concurrently": "^3.5.1",
     "http-server": "^0.11.1"
   },

@@ -1,9 +1,17 @@
 dependencies:
+  '@babel/runtime': 7.0.0-beta.51
   concurrently: 3.5.1
   http-server: 0.11.1
 devDependencies:
   cross-env: 5.2.0
 packages:
+  /@babel/runtime/7.0.0-beta.51:
+    dependencies:
+      core-js: 2.5.7
+      regenerator-runtime: 0.11.1
+    dev: false
+    resolution:
+      integrity: sha1-SLjtGDBwNMZiD2Q1FGUMoszAFlo=
   /ansi-regex/0.2.1:
     dev: false
     engines:
@@ -59,6 +67,10 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-689HrwGw8Rbk1xtV9C4dY6TPJAvIYZbRbnKSAtfJ7tHqICFGoZ0PCWYjxfmerRyxBG0o3sbG3pe7N8vqPwIHuQ==
+  /core-js/2.5.7:
+    dev: false
+    resolution:
+      integrity: sha512-RszJCAxg/PP6uzXVXL6BsxSXx/B05oJAQ2vkJRjyjrEcNVycaqOmNb5OTxZPE3xa5gwZduqza6L9JOCenh/Ecw==
   /corser/2.0.1:
     dev: false
     engines:
@@ -247,6 +259,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-6eha2+ddoLvkyOBHaghikPhjtAQ=
+  /regenerator-runtime/0.11.1:
+    dev: false
+    resolution:
+      integrity: sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
   /requires-port/1.0.0:
     dev: false
     resolution:
@@ -331,6 +347,7 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 7
 shrinkwrapVersion: 3
 specifiers:
+  '@babel/runtime': ^7.0.0-beta.51
   concurrently: ^3.5.1
   cross-env: ^5.2.0
   http-server: ^0.11.1

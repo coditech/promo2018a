@@ -4,7 +4,16 @@ Websites and final projects created by Codi 2018
 
 ### Additional websites not listed in this repo:
 
+*Group Projects*
+
 - [Codi Talents](http://coditalent.tk)
+- [Razor](http://172.104.155.254:3000)
+- [Minila]()
+- [Mini Studio](mini-studio.ml)
+
+*Personal Projects*
+
+- [ScoreX](http://172.104.155.254:3090)
 
 ## INSTALL
 

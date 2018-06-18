@@ -40,3 +40,6 @@
 [submodule "ibrahim_jakmour"]
 	path = ibrahim_jakmour
 	url = https://github.com/IbrahimJakmour/Devotech.git
+[submodule "paul_kananjian"]
+	path = paul_kananjian
+	url = https://github.com/paulkananjian/punchtech
