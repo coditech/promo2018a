@@ -56,9 +56,9 @@
     "git:update": "git submodule update --init --recursive --remote && git submodule foreach git checkout master && git submodule foreach git reset --hard HEAD && git submodule foreach git pull origin master",
     "requirements": "node ./index.js",
     "postinstall": "yarn run install:all",
-    "everything":"yarn run git:update && yarn run install:all && yarn run build:all && yarn run start",
+    "everything": "yarn run git:update && yarn run install:all && yarn run build:all && yarn run start",
     "minila": "cd minila && concurrently --kill-others -n minila:client \"http-server ./ -p 4080\"",
-    "start": "concurrently --kill-others -n main,ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham,paul,saleh,souad,terez \"yarn run requirements\" \"yarn run ahmad_khoja\" \"yarn run ali_osseily\" \"yarn run amr_gharz\" \"yarn run anas_jamous\" \"yarn run anthony_nakhle\" \"yarn run bayan_mawed\" \"yarn run fadi_moubassaleh\" \"yarn run hampig_mazakian\" \"yarn run ibrahim_jakmour\" \"yarn run jad_azar\" \"yarn run nagham_ramadan\" \"yarn run paul_kananjian\" \"yarn run saleh_saadi\" \"yarn run souad_ali\" \"yarn run terez_kazanjian\" \"yarn run minila\""
+    "start": "concurrently --kill-others -n main,ahmad,ali,amr,anas,anthony,bayan,fadi,hampig,ibrahim,jad,mitza,nagham,paul,saleh,souad,terez \"yarn run requirements\" \"yarn run ahmad_khoja\" \"yarn run ali_osseily\" \"yarn run amr_gharz\" \"yarn run anas_jamous\" \"yarn run anthony_nakhle\" \"yarn run bayan_mawed\" \"yarn run fadi_moubassaleh\" \"yarn run hampig_mazakian\" \"yarn run ibrahim_jakmour\" \"yarn run jad_azar\" \"yarn run mitza_haddad\" \"yarn run nagham_ramadan\" \"yarn run paul_kananjian\" \"yarn run saleh_saadi\" \"yarn run souad_ali\" \"yarn run terez_kazanjian\" \"yarn run minila\""
   },
   "repository": {
     "type": "git",
